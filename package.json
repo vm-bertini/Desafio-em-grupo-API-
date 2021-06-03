@@ -1,12 +1,24 @@
 {
-  "name": "PRIMEIRA_API",
+  "name": "Desafio-em-grupo-API-",
   "version": "1.0.0",
-  "description": "",
+  "description": "Acronimo de Application Programming Interface (Interface de Programação de aplicações) é basicamente um conjunto de rotinas e padrões estabelecidos por uma aplicação, para que outras aplicações possam utilizar as funcionalidades desta aplicação.",
   "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vm-bertini/Desafio-em-grupo-API-.git"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vm-bertini/Desafio-em-grupo-API-/issues"
+  },
+  "homepage": "https://github.com/vm-bertini/Desafio-em-grupo-API-#readme"
 }
