@@ -1,0 +1,62 @@
+[
+    {
+      "codProduto": 25754,
+      "descricao": "ADAPTADOR BLUETOOH USB RECEPTOR DE AUDIO P2",
+      "preco": 5.0,
+      "qtdEstoque": 10,
+      "disponivel": "sim",
+      "emDestaque": "sim",
+      "departamento": {
+          "idDepto": 1,
+          "nomeDepto": "Adaptadores"
+      }
+  },
+  {
+    "codProduto": 11719,
+    "descricao": "ALICATE PARA CRIMPAR TL-315 3 EM 1",
+    "preco": 15.0,
+    "qtdEstoque": 16,
+    "disponivel": "sim",
+    "emDestaque": "sim",
+    "departamento": {
+        "idDepto": 2,
+        "nomeDepto": "Ferramentas"
+    }
+  },
+  {
+    "codProduto": 27695,
+    "descricao": "CAMERA DE SEGURANCA XIAOMI MI HOME MJSXJ09CM 2K WIFI PANORAMICO 360 BRANCO",
+    "preco": 36.0,
+    "qtdEstoque": 5,
+    "disponivel": "sim",
+    "emDestaque": "sim",
+    "departamento": {
+        "idDepto": 3,
+        "nomeDepto": "Eletronicos"
+    }
+  },
+  {
+    "codProduto": 26941,
+    "descricao": "CAPTURA DE VIDEO ELGATO THUNDERBOLT3 DOCK 4K 10DAA4101 TYPE-C/DP/LAN/USB3.1/SOM",
+    "preco": 263.0,
+    "qtdEstoque": 84,
+    "disponivel": "sim",
+    "emDestaque": "sim",
+    "departamento": {
+        "idDepto": 3,
+        "nomeDepto": "Acessorios"
+    }
+  },
+  {
+    "codProduto": 26414,
+    "descricao": "ASPIRADOR NAPPO NLAR-063 ROBOT WIFI 350ML PRETO",
+    "preco": 87.0,
+    "qtdEstoque": 2,
+    "disponivel": "sim",
+    "emDestaque": "nao",
+    "departamento": {
+        "idDepto": 4,
+        "nomeDepto": "Casa"
+    }
+  }
+  ]

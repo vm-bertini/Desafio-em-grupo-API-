@@ -1,13 +1,14 @@
 const express = require ('express')
+const json = require ('./database-simulador.json')
 const app = express()
 
 app.get("/produtos", (req, res) => {
-    res.send()
+    res.send(json)
 });
 app.get("/produtos/:id", (req, res) => {
     res.send()
 })
-app.put("/produtos/:id")
+app.put("/produtos")
 app.post("/produtos")
 app.get("/departamento", (req, res) => {
     res.send()
