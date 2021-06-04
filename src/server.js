@@ -15,6 +15,9 @@ app.get ('/produtos/:id', async(req,res)=>{
     }
 })
 
+app.get ('/departamentos', async(req, res) =>{
+    return res.status(200).json(departamentos)
+})
 
 app.listen(3000, function() {
     console.log('Server is running')
