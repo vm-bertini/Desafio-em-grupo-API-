@@ -3,10 +3,10 @@ const json = require ('./database-simulador.json')
 const app = express()
 
 app.get("/produtos", (req, res) => {
-    res.send(json)
+    return res.json(json)
 });
 app.get("/produtos/:id", (req, res) => {
-    res.send()
+    return res.send()
 })
 app.put("/produtos")
 app.post("/produtos")
