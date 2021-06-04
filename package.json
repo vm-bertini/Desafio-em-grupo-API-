@@ -4,11 +4,12 @@
   "description": "Acronimo de Application Programming Interface (Interface de Programação de aplicações) é basicamente um conjunto de rotinas e padrões estabelecidos por uma aplicação, para que outras aplicações possam utilizar as funcionalidades desta aplicação.",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1"
   },
   "devDependencies": {},
   "scripts": {
-    "start" : " node src/server.js"
+    "start": " node src/server.js"
   },
   "repository": {
     "type": "git",
