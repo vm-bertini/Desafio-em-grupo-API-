@@ -19,6 +19,16 @@ app.get ('/departamentos', async(req, res) =>{
     return res.status(200).json(departamentos)
 })
 
+app.get ('/departamentos/:id', async(req,res)=>{
+    const { id } = req.params
+    for (let departamento of departamentos){
+        if (departamento.id == id){
+            return res.json([departamento])
+        }
+    }
+})
+
+
 app.listen(3000, function() {
     console.log('Server is running')
 });
