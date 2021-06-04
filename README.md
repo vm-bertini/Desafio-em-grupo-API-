@@ -34,3 +34,181 @@ Será feita a transferência de dados de uma maneira simbólica, figurativa, rep
 ## RESTFUL
 
 RESTful, é a aplicação dos padrões REST.
+
+
+
+## Dependências
+
+express 
+body-Parse
+
+## Clonando o repositório
+
+
+No CMD, digite o comando
+
+```
+clone https://github.com/vm-bertini/Desafio-em-grupo-API-.git
+```
+
+## Instalando as dependências
+
+   npm install express 
+   npm install --save body-parser
+    
+
+## Executando a aplicação
+
+   npm run start
+
+## **Host e porta**
+
+<localhost:3000>
+
+
+### **Método GET**
+
+Retorna a lista de todos os produtos existentes. Uma lista em formato JSON contendo todos os produtos da tabela.
+
+### **URL**
+
+localhost:3000/produtos`
+
+### **Requisição**
+
+`/produtos`
+
+### **Resposta**
+
+app.use(bodyParser.json())
+
+app.get ('/produtos', async(req, res) =>{
+    return res.status(200).json(produtos)
+})
+
+
+### **Método GET**
+
+Retorna os detalhes de 1 único produto. Um único objeto JSON recuperado a partir do ID fornecido como componente da URL
+
+### **URL**
+
+localhost:3000/produtos/:id
+
+### **Requisição**
+
+/produtos/:id
+
+### **Resposta**
+
+app.get ('/produtos/:id', async(req,res)=>{
+    const { id } = req.params
+    for (let produto of produtos){
+        if (produto.id == id){
+            return res.json([produto])
+        }
+    }
+})
+
+### **Método POST**
+	
+Recebe um JSON com dados de um produto e o inclui na base de dados. Retorna para o usuário o Objeto que foi incluído na tabela
+
+### **URL**
+
+localhost:3000/produtos
+
+### **Requisição**
+
+/produtos
+
+### **Resposta**
+
+app.post('/produtos', async(req,res)=>{
+    const resposta = req.body
+    console.log (produtos)
+    for (let i of resposta){
+        if (i.id == 0 || i.descricao === undefined|| i.preco === 0|| i.estoque === undefined|| i.disponivel != true && i.disponivel != false|| i.destaque != true && i.destaque != false || i.departamento_id == 0 )
+        {
+        return res.status(400)
+        }
+    }
+    produtos = produtos.concat(resposta);
+    return res.status(202).json(resposta)
+})
+
+
+### **Método PUT**
+
+Recebe um JSON com dados de um produto, cujo ID é especificado na URL e atualiza seus dados na base de dados.
+
+### **URL**
+
+localhost:3000/produto/{id}
+
+### **Requisição**
+
+/produto/{id}
+
+### **Resposta**
+
+app.put('/produtos/:id', async(req,res)=>{
+    const resposta = req.body
+    const { id } = req.params
+    for (let produto of produtos){
+        if (produto.id == id){
+            produto.id = resposta[0].id
+            produto.estoque = resposta[0].estoque
+            produto.disponivel = resposta[0].disponivel
+            produto.destaque = resposta[0].destaque
+            produto.departamento_id = resposta[0].departamento_id
+            return res.status(202).json(produto)
+        }
+        else{
+            continue
+        }
+    return res.status(400)
+}
+})
+
+### **Método GET**
+
+Retorna a lista de todos os departamentos
+
+### **URL**
+
+localhost:3000/departamentos
+
+### **Requisição**
+
+/departamentos
+
+### **Resposta**
+
+app.get ('/departamentos', async(req, res) =>{
+    return res.status(200).json(departamentos)
+})
+
+
+### **Método GET**
+
+Retorna o departamento e a lista de produtos que estão associadas a ele. Se o departamento não exisitir na base de Dados, retorna um status 404 - Not Found,
+
+### **URL**
+
+localhost:3000/departamentos/:id
+
+### **Requisição**
+
+/departamentos/:id
+
+### **Resposta**
+
+app.get ('/departamentos/:id', async(req,res)=>{
+    const { id } = req.params
+    for (let departamento of departamentos){
+        if (departamento.id == id){
+            return res.json([departamento])
+        }
+    }
+})
