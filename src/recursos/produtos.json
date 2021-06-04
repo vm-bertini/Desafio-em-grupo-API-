@@ -1,0 +1,47 @@
+[
+    {
+        "id": 8971,
+        "descricao": "BATERIA GOLINE ALKALINE 9V 500MAH",
+        "preco": 1.2,
+        "estoque": 2,
+        "disponivel": true,
+        "destaque": true,
+        "departamento_id": 1
+    },
+    {
+        "id": 27624,
+        "descricao": "BOLSA P/NOTEBOOK 15 TARGUS TST598BT-70 FEMENINO PRETO",
+        "preco": 48,
+        "estoque": 3,
+        "disponivel": true,
+        "destaque": false,
+        "departamento_id": 1
+    },
+    {
+        "id": 27065,
+        "descricao": "CADEIRA GAMER HAVIT 922 GAMENOTE VERMELHO",
+        "preco": 185,
+        "estoque": 3,
+        "disponivel": true,
+        "destaque": false,
+        "departamento_id": 2
+    },
+    {
+        "id": 27133,
+        "descricao": "TABLET AMAZON FIRE  HD8 KIDS EDITION 2GB/32GB ROSA WIFI/QUAD CORE 8''",
+        "preco": 99,
+        "estoque": 18,
+        "disponivel": true,
+        "destaque": false,
+        "departamento_id": 3
+    },
+    {
+        "id": 27131,
+        "descricao": "TABLET AMAZON FIRE  HD8 KIDS EDITION 2GB/32GB AZUL WIFI/QUAD CORE 8''",
+        "preco": 99,
+        "estoque": 34,
+        "disponivel": true,
+        "destaque": false,
+        "departamento_id": 3
+    }
+]
